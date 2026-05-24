@@ -1,0 +1,19 @@
+# ── Runtime dependencies ────────────────────────────────────────────────────
+# PySpark is provided by the Databricks runtime — do NOT pin it here.
+# Install these via: pip install -r requirements.txt  (for local dev)
+
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# ── Testing ─────────────────────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-mock>=3.12.0
+chispa>=0.9.2          # DataFrame equality assertions for PySpark tests
+
+# ── Code quality ─────────────────────────────────────────────────────────────
+black>=23.0.0
+flake8>=6.1.0
+isort>=5.12.0
+
+# ── Databricks CLI (for deploying notebooks & jobs) ──────────────────────────
+databricks-cli>=0.18.0
